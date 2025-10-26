@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>My To-Do List 📝</h2>
+
+        <div class="controls-panel">
+            <h3>Customize Page</h3>
+
+            <label for="bgSelect">Background:</label>
+            <select id="bgSelect">
+                <option value="">Default</option>
+                <option value="#fff9c4">Light Yellow</option>
+                <option value="#e3f2fd">Light Blue</option>
+                <option value="#e8f5e9">Light Green</option>
+                <option value="#f8bbd0">Pink</option>
+                <option value="#f0f0f0">Light Gray</option>
+            </select>
+
+            <button class="btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+            <div class="font-controls">
+                <label>Font Size:</label>
+                <button class="btn" id="fontIncrease">A+</button>
+                <button class="btn" id="fontDecrease">A−</button>
+            </div>
+
+            <label for="fontStyleSelect">Font Style:</label>
+            <select id="fontStyleSelect">
+                <option value="Arial, sans-serif">Sans-serif</option>
+                <option value="'Times New Roman', serif">Serif</option>
+                <option value="'Courier New', monospace">Monospace</option>
+            </select>
+        </div>
+
+        <input type="text" id="taskInput" placeholder="Enter new task">
+        <button class="btn" onclick="addTask()">Add</button>
+
+        <ul id="taskList"></ul>
+
+        <hr>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

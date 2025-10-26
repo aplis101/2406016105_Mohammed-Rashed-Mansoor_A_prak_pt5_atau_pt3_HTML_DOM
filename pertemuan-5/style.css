@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+    background-color: #ffffff;
+    color: #000;
+}
+.container {
+    max-width: 560px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.95);
+    padding: 16px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.btn {
+    padding: 6px 10px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    background: #f4f4f4;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+.btn:hover {
+    background: #eaeaea;
+    transform: scale(1.03);
+}
+.btn.close {
+    background: #ffecec;
+    border-color: #e0a0a0;
+}
+.btn.close:hover {
+    background: #f8dcdc;
+}
+
+.controls-panel {
+    margin-bottom: 16px;
+    padding: 10px;
+    border-radius: 6px;
+    background: #fafafa;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+.controls-panel h3 { margin-top: 0; font-size: 18px; margin-bottom: 8px; color: #333; }
+.controls-panel label { margin-right: 6px; font-weight: 600; }
+
+#bgSelect, #fontStyleSelect {
+    padding: 4px 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#newTask {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin-right: 6px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+li {
+    background: #fff;
+    margin: 6px 0;
+    padding: 8px 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s ease;
+}
+li:hover { background: #f9f9f9; }
+.task-text { flex: 1; word-wrap: break-word; cursor: pointer; }
+.completed { text-decoration: line-through; color: gray; }
+
+body.dark-mode {
+    background-color: #121212;
+    color: #eaeaea;
+}
+body.dark-mode .container {
+    background: rgba(25,25,25,0.95);
+    box-shadow: 0 2px 8px rgba(255,255,255,0.1);
+}
+body.dark-mode input,
+body.dark-mode select {
+    background-color: #1e1e1e;
+    color: #eaeaea;
+    border-color: #555;
+}
+body.dark-mode li {
+    background: #2b2b2b;
+    color: #f0f0f0;
+}
+body.dark-mode .btn {
+    background: #333;
+    color: #eaeaea;
+    border-color: #777;
+}
+body.dark-mode .controls-panel {
+    background: #1a1a1a;
+}
